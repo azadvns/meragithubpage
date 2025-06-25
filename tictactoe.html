@@ -6,6 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic tac toe</title>
     <style>
+
+
+ @keyframes rotate {
+            0% {
+                left: 0%;
+                top: 0%;
+            }
+
+            25% {
+                left: 90%;
+                top: 0%;
+            }
+
+            50% {
+                left: 90%;
+                top: 80%;
+            }
+
+            75% {
+                left: 0%;
+                top: 80%;
+            }
+
+            100% {
+                left: 0%;
+                top: 0%;
+
+            }
+        }
+
+        .spinner {
+            position: absolute;
+            animation-name: rotate;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-duration: 20s;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            border-style: ridge;
+            flex-wrap: wrap;
+            border-color: aquamarine;
+
+        }
+
+@keyframes game{
+    0%{opacity: 1;}
+    100%{opacity: 0.5;}
+}
+
+        .tic{
+            animation-name: game;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            background-color: lightseagreen;
+            width: 300px;
+            
+            border-style: ridge;
+            border-color: blueviolet;
+            border-radius: 10px;
+
+        }
+        .tic:hover{
+            background-color: maroon;
+            color: gold;
+        }
+
+
+/* ******************************************* */
+
+.desine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    box-shadow: 5px 5px 10px #888888;
+    width: 300px;
+    border-style: ridge;
+    border-color: blueviolet;
+    border-radius: 10px;
+    
+    
+}
+
+
+
+
         .col {
             border-style: ridge;
             width: 50px;
@@ -22,7 +110,7 @@
 <body>
 
     <center>
-        <h2>Tic-tac-toe Game</h2>
+        <h2 class="tic">Tic-tac-toe Game</h2>
         <div id="dra"></div>
         <table border="1">
 
@@ -83,8 +171,7 @@
         </table>
     </center>
 
-
-
+<img class="spinner" src="azad4.jpg">
     <script>
 
 
@@ -590,6 +677,10 @@
     </script>
 
     <!-- <button onclick="checkGameStatus()">check</button> -->
+     <center>
+ <h1 class="desine">Azad Prajapati </h1>
+     </center>
+    
 
 </body>
 
