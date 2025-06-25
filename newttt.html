@@ -100,27 +100,19 @@
 
         let player = 1;
 
-        let gamestatus = "continue";
-        function play(id) {
-            if(gamestatus!="continue")
-        {
 
-            alert(gamestatus);
-            return;
-        }
-            // alert(gamestatus);
+        function play(id) {
             let currentcoin = document.getElementById(id).innerHTML;
             // alert(currentcoin);
             if (currentcoin == "X" || currentcoin == "O") {
                 alert("Already filled");
-                // gamestatus();
                 return;
             }
 
 
             let coin;
             if (player == 1)
-                coin = ("X"); 
+                coin = ("X");
 
             else
                 coin = ("O");
@@ -136,7 +128,6 @@
             let xcount = 0;
             let ocount = 0;
             let drawcount = 0;
-            
             if (c1 == "X") {
                 xcount++;
             }
@@ -186,14 +177,12 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X winner";
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
                 return;
 
             }
@@ -238,14 +227,12 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
                 return;
 
             }
@@ -291,14 +278,12 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
                 return;
 
             }
@@ -344,14 +329,12 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
                 return;
 
             }
@@ -398,14 +381,12 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
                 return;
 
             }
@@ -452,15 +433,12 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
-
                 return;
 
             }
@@ -507,16 +485,12 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
-
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
-
                 return;
 
             }
@@ -563,16 +537,12 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
-                
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
-
 
                 return;
 
@@ -582,9 +552,7 @@
             dd.innerHTML = drawcount;
             if (drawcount == 8) {
                 alert("draw");
-                gamestatus="draw";
             }
-            
         }
 
     </script>
