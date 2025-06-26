@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic tac toe</title>
     <style>
-
-
- @keyframes rotate {
+        @keyframes rotate {
             0% {
                 left: 0%;
                 top: 0%;
@@ -40,56 +38,64 @@
             position: absolute;
             animation-name: rotate;
             animation-iteration-count: infinite;
-            animation-direction: normal;
+            animation-direction:normal;
             animation-duration: 20s;
             width: 100px;
             height: 100px;
             border-radius: 50px;
             border-style: ridge;
+            display: flex;
+
             flex-wrap: wrap;
             border-color: aquamarine;
 
         }
 
-@keyframes game{
-    0%{opacity: 1;}
-    100%{opacity: 0.5;}
-}
+        @keyframes game {
+            0% {
+                opacity: 1;
+            }
 
-        .tic{
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        .tic {
             animation-name: game;
             animation-duration: 5s;
             animation-iteration-count: infinite;
             background-color: lightseagreen;
             width: 300px;
-            
+
             border-style: ridge;
             border-color: blueviolet;
             border-radius: 10px;
 
         }
-        .tic:hover{
+
+        .tic:hover {
             background-color: maroon;
             color: gold;
         }
 
 
-/* ******************************************* */
+        /* ******************************************* */
 
-.desine{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: aquamarine;
-    box-shadow: 5px 5px 10px #888888;
-    width: 300px;
-    border-style: ridge;
-    border-color: blueviolet;
-    border-radius: 10px;
-    
-    
-}
+        .desine {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: aquamarine;
+            box-shadow: 5px 5px 10px #888888;
+            width: 300px;
+            border-style: ridge;
+            border-color: blueviolet;
+            border-radius: 10px;
+
+
+        }
 
 
 
@@ -104,6 +110,7 @@
             color: black;
             background-color: palevioletred;
         }
+        
     </style>
 </head>
 
@@ -112,7 +119,7 @@
     <center>
         <h2 class="tic">Tic-tac-toe Game</h2>
         <div id="dra"></div>
-        <table border="1">
+        <table  border="1">
 
             <tr>
                 <td>
@@ -171,7 +178,7 @@
         </table>
     </center>
 
-<img class="spinner" src="azad4.jpg">
+    <img class="spinner" src="azad4.jpg">
     <script>
 
 
@@ -189,12 +196,11 @@
 
         let gamestatus = "continue";
         function play(id) {
-            if(gamestatus!="continue")
-        {
+            if (gamestatus != "continue") {
 
-            alert(gamestatus);
-            return;
-        }
+                alert(gamestatus);
+                return;
+            }
             // alert(gamestatus);
             let currentcoin = document.getElementById(id).innerHTML;
             // alert(currentcoin);
@@ -207,7 +213,7 @@
 
             let coin;
             if (player == 1)
-                coin = ("X"); 
+                coin = ("X");
 
             else
                 coin = ("O");
@@ -223,7 +229,7 @@
             let xcount = 0;
             let ocount = 0;
             let drawcount = 0;
-            
+
             if (c1 == "X") {
                 xcount++;
             }
@@ -273,14 +279,14 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X winner";
+                gamestatus = "X winner";
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
+                gamestatus = "O Winner";
                 return;
 
             }
@@ -325,14 +331,14 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
+                gamestatus = "X Winner";
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
+                gamestatus = "O Winner";
                 return;
 
             }
@@ -378,14 +384,14 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
+                gamestatus = "X Winner";
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
+                gamestatus = "O Winner";
                 return;
 
             }
@@ -431,14 +437,14 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
+                gamestatus = "X Winner";
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
+                gamestatus = "O Winner";
                 return;
 
             }
@@ -485,14 +491,14 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
+                gamestatus = "X Winner";
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
+                gamestatus = "O Winner";
                 return;
 
             }
@@ -539,14 +545,14 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
+                gamestatus = "X Winner";
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
+                gamestatus = "O Winner";
 
                 return;
 
@@ -594,7 +600,7 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
+                gamestatus = "X Winner";
 
                 return;
 
@@ -602,7 +608,7 @@
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
+                gamestatus = "O Winner";
 
                 return;
 
@@ -650,15 +656,15 @@
             }
             if (xcount == 3) {
                 alert("X Winner");
-                gamestatus="X Winner";
-                
+                gamestatus = "X Winner";
+
                 return;
 
             }
 
             if (ocount == 3) {
                 alert("O Winner");
-                gamestatus="O Winner";
+                gamestatus = "O Winner";
 
 
                 return;
@@ -669,18 +675,18 @@
             dd.innerHTML = drawcount;
             if (drawcount == 8) {
                 alert("draw");
-                gamestatus="draw";
+                gamestatus = "draw";
             }
-            
+
         }
 
     </script>
 
     <!-- <button onclick="checkGameStatus()">check</button> -->
-     <center>
- <h1 class="desine">Azad Prajapati </h1>
-     </center>
-    
+    <center>
+        <h1 class="desine">Azad Prajapati </h1>
+    </center>
+
 
 </body>
 
