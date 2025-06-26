@@ -13,7 +13,7 @@
 },
 {
 "qno": 2,
-"question 2": "What is the name of the weak zone of the earths crust?",
+"question": "What is the name of the weak zone of the earths crust?",
 
 "a":"Seismic",
 "b":"Cosmic",
@@ -25,7 +25,7 @@
 },
 {
 "qno": 3,
-"question 3": "Where was India's first national Museum opened?",
+"question": "Where was India's first national Museum opened?",
 
 "a":"Delhi",
 "b":"Hyderabad",
@@ -37,7 +37,7 @@
 },
 {
 "qno": 4,
-"question 4": "In 2019,Which popular singer was awarded the Bharat Ratna award?",
+"question ": "In 2019,Which popular singer was awarded the Bharat Ratna award?",
 
 "a":"Lata Mangeshkar",
 "b":"Asha Bhosle",
@@ -49,7 +49,7 @@
 },
 {
 "qno": 5,
-"question 5": "The word's nation 5G mobile network was launched by which country?",
+"question ": "The word's nation 5G mobile network was launched by which country?",
 
 "a":"Japan",
 "b":"Asia",
