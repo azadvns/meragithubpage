@@ -4,7 +4,7 @@
 "question": "Which of the three bank will be merged with the other two to create Indias third-largest bank",
 
 "a":"Panjab National Bank",
-"b":"Indian BAnk",
+"b":"Indian Bank",
 "c":"Bank of Baroda",
 "d":"Dena Bank",
 
@@ -20,7 +20,7 @@
 "c":"Formic",
 "d":"Anaemic",
 
-"answer": "0"
+"answer": "1"
 
 },
 {
@@ -32,7 +32,7 @@
 "c":"Rajasthan",
 "d":"Mumbai",
 
-"answer": "3"
+"answer": "1"
 
 },
 {
@@ -44,7 +44,7 @@
 "c":"Bhupen Hazarika",
 "d":"Manna Dey",
 
-"answer": "2"
+"answer": "3"
 
 },
 {
@@ -56,7 +56,7 @@
 "c":"South Korea",
 "d":"Malaysia",
 
-"answer": "2"
+"answer": "3"
 
 }
 ]
